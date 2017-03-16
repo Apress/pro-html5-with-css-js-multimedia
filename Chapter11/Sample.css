@@ -1,0 +1,123 @@
+@import url(//fonts.googleapis.com/css?family=Cabin);
+
+div>p {
+    border: 1px solid black;
+    font-family: Cabin, Verdana, sans-serif;
+    text-align: justify;
+    text-justify: distribute;
+    text-indent: 10%;
+    word-spacing: 150%;
+    letter-spacing: 1px;
+}
+
+.relative {
+    font-family: Arial;
+    font-size: medium;
+}
+strong {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.kerning, .noKerning {
+    font-family: serif;
+    font-size: 48px;
+}
+
+.kerning {
+    font-kerning: normal;
+}
+.noKerning {
+    font-kerning: none;
+}
+
+.stretched, .condensed {
+    font-family: arial;
+    font-size: 48px;
+}
+.stretched {
+    font-stretch: extra-expanded;
+}
+.condensed {
+    font-stretch: extra-condensed;
+}
+
+.smallCaps {
+    font-size: x-large;
+    font-variant-caps: small-caps;
+}
+
+.diagonal {
+    font-family: Verdana;
+    font-size: xx-large;
+    font-variant-numeric: diagonal-fractions;
+}
+
+.overflow {
+    font-size: large;
+    border: 1px solid black;
+    width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+* {
+    quotes: "{" "}" "[" "]"
+}
+
+.quote::before {
+    content: open-quote;
+}
+.quote::after {
+    content: close-quote;
+}
+
+.shadow {
+    font-size: xx-large;
+    text-shadow: 10px 5px 1px gray;
+}
+.background {
+    font-size: xx-large;
+    text-shadow: 0px 0px 5px gray;
+}
+.blurred {
+    font-size: xx-large;
+    text-shadow: 10px 5px 10px gray;
+}
+
+.whitespace {
+    font-family: monospace;
+    white-space: pre;
+}
+
+#Align {
+    font-family: Verdana;
+    font-size: 36px; 
+}
+.large {
+    font-size: 48px;
+    vertical-align: text-bottom;
+}
+.small {
+    font-size: 24px;
+    vertical-align: text-top;
+}
+.align {
+    display: inline-block;
+    font-size: 48px;
+}
+.box {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border: 1px solid black;    
+    vertical-align: middle;
+}
+.solid {
+    background-color: black;
+}
+.align>span {
+    vertical-align: middle;    
+}
+
+

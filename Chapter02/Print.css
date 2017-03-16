@@ -1,0 +1,10 @@
+body>h1 {
+    color: black;
+}
+
+body {
+    border: 1px solid;
+    border-color: black;
+    border-radius: 25px;
+    padding: 24px;  
+}

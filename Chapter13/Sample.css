@@ -1,0 +1,216 @@
+table {
+    border: 3px solid black;
+    /*border-spacing: 0;*/
+    border-collapse: collapse;
+    /*empty-cells: hide;*/
+}
+
+th, td {
+    border: 1px solid black;
+}
+
+
+/* Simulate row borders    
+th, td {
+    border-top:  1px solid black;
+    border-bottom: 1px solid black;
+}
+
+table {
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    border-top:  1px solid black;
+    border-bottom: 1px solid black;
+}
+
+table th:first-child, table td:first-child {
+    border-left: 1px solid black;
+}
+
+table th:last-child, table td:last-child  {
+    border-right: 1px solid black;
+}
+*/
+
+th, td, caption {
+    padding: 5px;
+}
+
+td:nth-of-type(1) { /*Qty*/
+    text-align: right;
+    }
+
+td:nth-of-type(2) { /*Points*/
+    text-align: right;
+    }
+
+td:nth-of-type(3) { /*Symbol*/
+    text-align: center;
+    }
+
+table caption {
+    /*border: 3px solid black;*/
+    border-style: solid;
+    border-color: black;
+    border-width: 3px 3px 0px 3px;
+    caption-side: top;
+}
+
+/*
+th {
+    background-color: #DDB;
+    background: linear-gradient(to bottom right, #FFF 0%, #DDB 100%);
+}
+*/
+
+table {
+    background-color: #DDB;
+    background: linear-gradient(to bottom right, #F4F4F0 0%, #DDB 100%);    
+}
+
+td {
+    background-color: white;
+    background-image: none;
+}
+
+tr:nth-of-type(even)>td {
+    background-color: #F4F4F0;
+}
+
+caption {
+    font-size: xx-large;
+}
+
+/* Highlighting */
+tr:nth-child(3)>th, tr:nth-child(3)>td {
+    background-color: yellow;
+}
+
+th:nth-child(3), table td:nth-child(3) {
+    background-color: yellow;    
+}
+
+/*
+table, .table {
+    margin: 2px;
+}
+*/
+
+/* Simulate table layout on non-table elements */
+/*
+.table {
+    display: table;
+    border: 3px solid black;
+    border-collapse: collapse;
+    background-color: #DDB;
+    background: linear-gradient(to bottom right, #F4F4F0 0%, #DDB 100%);    
+}
+.row {
+    display: table-row;
+}
+.row>h3, .row>p {
+    display: table-cell;
+    border: 1px solid black;
+    padding: 5px;
+    vertical-align: middle;
+}
+.row img {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0 auto; 
+}
+.row>h3 {
+    text-align: center;
+    font-size: medium;
+}
+.row>p:nth-child(2) { 
+    text-align: right;
+    }
+.row>p:nth-child(3) { 
+    text-align: right;
+    }
+.body>p, .foot>p {
+    background-color: white;
+    background-image: none;
+}
+.body:nth-child(odd)>p, .body:nth-child(odd)>img {
+    background-color: #F4F4F0;
+}
+.row:nth-child(4)>h3, .row:nth-child(4)>p {
+    background-color: yellow;
+}
+.row>h3:nth-child(3), .row>p:nth-child(3) {
+    background-color: yellow;    
+}
+*/
+
+/* Centering */
+.centering div, .centering p {
+    /*display: inline;*/
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+}
+.centering img {
+    width: 50px;
+}
+
+/* Page layout*/
+@media (min-width: 700px) {
+    section {
+        display: table;
+        table-layout: fixed;
+    }
+    nav, main, aside {
+        display: table-cell;
+    }
+
+    nav {
+        min-width: 150px;
+    }
+    aside {
+        width: 25%;
+        text-align: center;
+    }
+    ul {
+        display: table;
+    }
+    li {
+        display: table-row;
+        height: 50px;
+        text-align: left;
+        vertical-align: middle;
+    }
+}
+
+/* Beautification */
+header, footer {
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: #F4F4F0;
+    text-align: center;
+    padding: 5px;
+}
+nav, aside {
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: #F0F0F0;    
+}
+aside article:nth-child(even) {
+    background-color:  #fafbbf;
+}
+aside {
+    padding: 5px;
+    font-family: Verdana;
+    font-size: small;
+}
+
+ul {
+    /*list-style-image: url("pawn.png");*/
+    /*list-style-position: inside;*/
+    list-style: url("pawn.png") outside square;
+}
+

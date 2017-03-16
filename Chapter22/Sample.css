@@ -1,0 +1,28 @@
+.body {
+    fill: white;
+    stroke: gray;
+    stroke-width: 1px;
+}
+        
+.hat {
+    fill: black;
+    stroke: black;
+    stroke-width: 3px;
+}
+        
+.button {
+    fill: black;
+}
+        
+.eye {
+    fill: black;
+}
+        
+.nose {
+    fill: orange;
+}
+
+body {
+    background-image: url(snowman.svg);
+    background-size: cover;
+}

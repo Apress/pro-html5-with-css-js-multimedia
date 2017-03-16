@@ -1,0 +1,31 @@
+.row {
+    display: table-row;
+    margin: 0;
+    padding: 0;
+}
+.bblack, .bwhite {
+    display: table-cell;
+    border-color: #b93030;
+    border-width: 1px;
+    border-style: solid;
+    width: 48px;
+    height: 48px;
+    margin: 0;
+    padding: 0;    
+}
+.bblack {
+    background-color: #b93030;
+}
+.bwhite {
+    background-color: #f7f7f7;
+}
+.piece {
+    margin-left: 4px;
+    margin-top: 4px; 
+}
+.bblack.drop {
+    opacity: 0.5;
+}
+.piece.selected {
+    opacity: 0.5;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Chapter 21 - Audio and Video</title>
+        <link rel="stylesheet" href="Sample.css" />
+        <script src="SampleScript.js" defer></script>
+    </head>
+    <body>
+        <audio id="audio" src="Media/Linus and Lucy.mp3" >
+            <p>HTML5 audio is not supported on your browser</p>
+        </audio>
+        <div id="audioControls">
+            <input type="button" value="Play" id="play" />
+            <input type="range" id="audioSeek" />
+            <span id="duration"></span>
+            <input type="button" id="mute" value="Mute" />
+            <input type="range" id="volume" min="0" max="1" step="any" />
+        </div>
+        <div>
+            <input type="button" value="Track2" id="track2" />
+        </div>
+        <video src="Media/BigBuckBunny.mp4"  id="video" controls
+                poster="Media/BBB_Poster.png" width="852" height="480">
+            <p> HTML5 video is not supported on your browser</p>
+        </video>
+        <div id="videoControls">
+            <input type="button" value="Play" id="playVideo" />
+            <input type="range" id="videoSeek" />
+            <span id="durationVideo"></span>
+            <input type="button" id="muteVideo" value="Mute" />
+            <input type="range" id="volumeVideo" min="0" max="1" step="any" />
+        </div>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Chapter 19 - Dynamic Styling</title>
+        <link rel="stylesheet" href="Sample.css" />
+        <!--<link rel="alternate stylesheet" href="Red.css" title="Red"/>
+        <link rel="alternate stylesheet" href="Green.css" title="Green"/>
+        <link rel="alternate stylesheet" href="Blue.css" title="Blue"/>-->
+        <script src="SampleScript.js" defer></script>
+        <style title="Red" id="Red">
+            p { color: red;}
+        </style>
+        <style title="Green" id="Green">
+            p { color: green;}
+        </style>
+        <style title="Blue" id="Blue">
+            p { color: blue;}
+        </style>
+    </head>
+    <body>
+        <p><strong>Hello</strong> World!</p>
+        <button onclick="toggleSS()">Toggle</button>
+        <button onclick="toggleBackground()">Background</button>
+        <br />
+        <button onclick="disableAll()">Black</button>
+        <button onclick="enable('Red')" style="color: red">Red</button>
+        <button onclick="enable('Green')" style="color: green">Green</button>
+        <button onclick="enable('Blue')" style="color: blue">Blue</button>
+        <br />
+        <button onclick="toggleRule()">Border</button>
+        <button onclick="toggleClass()">Opacity</button>
+    </body>
+</html>

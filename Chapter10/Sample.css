@@ -1,0 +1,135 @@
+div, span {
+    border: 1px solid black;
+    margin: 1px;
+}
+.container {
+    width: -moz-max-content;
+    height: -moz-max-content;
+    width: max-content;
+    height: max-content;
+}
+.grandParent {
+    border: none;
+    margin: 0px;
+    display:  -ms-grid;
+    -ms-grid-columns: max-content;
+}
+figure {
+    border: 1px solid black;
+    margin: 1px;
+    width: -moz-min-content;
+    width: min-content;
+}
+article {
+    width: 300px;
+    height: 60px;
+    margin: 1px;
+}
+.bigBorder {
+    padding: 30px;
+    border:  10px solid olive;
+}
+.smallBorder {
+    padding: 5px;
+    border:  2px solid olive;
+}
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #f3f3f3;
+}
+
+header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header>div {
+    padding: 25px;
+}
+header>div:nth-of-type(odd) {
+    float: left;
+    clear: left;
+}
+header>div:nth-of-type(even) {
+    float: right;
+    clear: right;
+}
+header>p {
+    display: none;
+}
+
+nav>div {
+    display: inline-block;
+    width: 75px;
+    height: 25px;
+    vertical-align: bottom;
+    clear: both;
+}
+
+nav>div:nth-of-type(even) {
+    height: 35px;
+}
+
+
+header>div.square {
+    padding: 0px;
+    float: left;
+    clear: none;
+    width: 100px;
+    height: 100px;
+}
+
+.red {
+    background-color: pink;
+}
+.yellow {
+    background-color: yellow;
+}
+.blue {
+    background-color: cyan;
+}
+.green {
+    background-color: chartreuse;
+}
+
+/*
+.blue {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+*/
+/*
+.blue {
+    position: absolute;
+    top: -10px;
+    right: 50px;
+}
+*/
+.blue {
+    position: fixed;
+    top: 50px;
+    left: 0px;
+}
+
+.green {
+    position: fixed;
+    top: 70px;
+    left: 20px;
+}
+
+header {
+    position: relative;
+}
+
+.center {
+    width: 100px;
+    height: 30px;
+    background-color: teal;
+    margin: 0 auto;
+}
+

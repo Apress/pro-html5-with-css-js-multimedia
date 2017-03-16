@@ -1,0 +1,41 @@
+path {
+    stroke: black;
+    /*fill: khaki;*/
+}
+
+path[id^="A"] {
+    fill: red;
+}
+path[id^="N"] {
+    fill: yellow;
+}
+path[id^="M"] {
+    fill: green;
+}
+path[id^="C"] {
+fill: blue;
+}
+path[id^="O"] {
+    fill: purple;
+}
+path[id^="I"] {
+    fill: orange;
+}
+
+/*path:hover {
+    opacity: .5;
+}*/
+
+path[id="WY"] {
+    fill: url(#blueGradient);
+}
+
+path[id="TX"] {
+    fill: url(#TXflag);      
+}
+
+path {
+    transform-style: preserve-3d;    
+    perspective: 200px;
+}
+

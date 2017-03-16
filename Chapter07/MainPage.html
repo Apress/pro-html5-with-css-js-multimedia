@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Mark J Collins" />
+        <meta name="description" content="Sample HTML document" />
+        <title>HTML5 Sample</title>
+        <link rel="stylesheet" href="Initial.css" />
+        <link rel="stylesheet" href="Print.css" media="print" />
+        <link rel="icon" type="image/x-icon" href="HTMLBadge.ico" />
+        <link rel="alternate" type="application/pdf" href="MainPage.pdf" />
+        <link rel="author" href="mailto:markc@thecreativepeople.com" />
+        <link rel="author" type="text/html" href="http://www.thecreativepeople.com" />
+        <style>
+            #Periodic td {
+                width: 35px;
+                border: 1px solid black;
+                padding: 1px;
+                margin: 1px;
+                text-align: center;
+            }
+            #Periodic th {
+                border: 1px solid black;
+                background-color: #0ff;
+                padding: 1px;
+                margin: 1px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>My Sample Page</h1>
+        <header>
+            <p>Heading</p>
+        </header>
+        <nav>
+            <h1>Navigation</h1>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="http://www.apress.com">Apress</a></li>
+                <li><a href="http://www.theCreativePeople.com">My Site</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h1>Top-level</h1>
+            <section>
+                <h2>New York Yankees Starting Lineup</h2>
+                <details>
+                    <summary>This content is collapsed</summary>
+                    <dl>
+                        <dt>Infielders</dt>
+                        <dd>Teixeira, 1B</dd>
+                        <dd>Castro, 2B</dd>
+                        <dd>Gregorius, SS</dd>
+                        <dd>Torreyes, 3B</dd>
+                        <dd>McCann, C</dd>
+                        <dt>Outfielders</dt>
+                        <dd>Hicks, LF</dd>
+                        <dd>Ellsbury, CF</dd>
+                        <dd>Ackley, RF</dd>
+                        <dt>Designated Hitter</dt>
+                        <dd>Rodriguez, DH</dd>
+                        <dt>Pitchers</dt>
+                        <dd>Gausman, R</dd>
+                        <dd>Wilson, R</dd>
+                        <dd>Tillman, R</dd>
+                        <dd>Price, L</dd>
+                        <dd>Porcello, R</dd>
+                    </dl>
+                    <dl>
+                        <dt>Hicks, LF</dt>
+                        <dt>Ellsbury, CF</dt>
+                        <dt>Ackley, RF</dt>
+                        <dd>Outfielders - the positions in baseball that are played in the grassy area behind the diamond, known as the outfield. These positions include the Left Fielder, Center Fielder, and Right Fielder.</dd>
+                    </dl>
+                </details>
+                <main>
+                    <h1>Main content</h1>
+                    <section>
+                        <h1>Featured content</h1>
+                        <p>
+                            This is some <br />
+                            special <br>empty</br> text
+                        </p>
+                        <blockquote cite="www.apress.com">
+                            <h1>Quotation</h1>
+                            <p>This is a quotation</p>
+                        </blockquote>
+                        <p>paragraph 1</p>
+                        <hr />
+                        <p>paragraph 2</p>
+                    </section>
+                </main>
+                <section>
+                    <h1>Articles</h1>
+                    <article>
+                        <h1>Article 1</h1>
+                        <pre>I heard the bells on Christmas Day
+Their old, familiar carols play, 
+    And wild and sweet 
+    The words repeat 
+Of peace on earth, good-will to men!</pre>
+                        <cite>Henry Wadsworth Longfellow - 1863, public domain</cite>
+                        <figure>
+                            <h1>Figure</h1>
+                            <img src="HTML5Badge.png" alt="HTML5" />
+                            <figcaption>Official HTML5 Logo</figcaption>
+                        </figure>
+                    </article>
+                    <article>
+                        <h1>Article 2</h1>
+                        One <br> Two </br> Three
+                        <p>
+                            Fourscore and seven years ago,<br />
+                            our fathers brought forth to this continent<br />
+                            a new nation, conceived in liberty<br />
+                            and dedicated to the proposition that all men are created equal.<br />
+                        </p>
+                        <p style="width: 70px; word-wrap: break-word">
+                            Supercalifragilisticexpialidocious<br />
+                            --<br />
+                            Super<wbr />cali<wbr />fragilistic<wbr />expiali<wbr />docious<br />
+                            --<br />
+                            Super&shy;cali&shy;fragilistic&shy;expiali&shy;docious
+                        </p>
+                        <p>
+                            <strong>
+                                <strong>Warning!</strong> Be sure to <strong>extinguish</strong> all fires!
+                            </strong>
+                        </p>
+                        <p>
+                            "Read my lips: <mark>no new taxes</mark>", declared presidential candidate George H. W. Bush in 1988. However, the 1990 budget agreement increased taxes in several areas.
+                        </p>
+                        <p>
+                            "Class, pay attention!" <i>I wonder if they're even listening to me.</i> "Who's ready for tomorrow's exam?"
+                        </p>
+                        <p>
+                            "This needs some... <i>je ne sais quoi</i>."
+                        </p>
+                        <p>
+                            "He's not really bald, he just has a severe shortage of <i>folliculus pili</i> on his head."
+                        </p>
+                        <p>
+                            For a limited time only <s>$9.95</s> $7.99 will get you a...
+                            <s><img src="HTML5Badge.png" alt="Badge" /></s>
+                        </p>
+                        <p>
+                            The text highlighting elements include <b class="keyword">importance</b>, 
+                            <b class="keyword">emphasis</b>, and <b class="keyword">alternate voice</b>.
+                        </p>
+                        <p>
+                            Please be sure to <u class="spelling">chek</u> <u class="usage">four</u> spelling <u class="grammar">mistake</u>.
+                        </p>
+                        <p>
+                            Source code: <code class="language-javascript">Item.prototype.isAvailable = true;</code>
+                            This is a larger block:
+                        </p>
+                        <pre>
+                            <code class="language-javascript">
+this.log = function () {
+    console.log("Quantity: " + <var>this.count</var> + ", Color: " + <var>this.color</var>);
+};
+                            </code>
+                        </pre>
+                        <p>
+                            The area of a rectangle with length <var>l</var> and width <var>w</var> is 
+                            <var>l</var> * <var>w</var>.
+                        </p>
+                        <p>
+                            The use of <abbr title="Hypertext Markup Language">HTML</abbr> has contributed greatly to
+                            the popularity of web-based applications. <br /><br /><br />
+                            <dfn id="htmlDef" title="HyperText Markup Language">HTML</dfn> is a standardized way of
+                            adding semantic information to support rich formatting of content. <br />
+                            <dfn><abbr title="Hypertext Markup Language">HTML</abbr></dfn> is a standardized way of
+                            adding semantic information to support rich formatting of content. <br />
+                        </p>
+                        <p>
+                            Learning <a href="#htmlDef">HTML</a> is certainly worthwhile and rewarding.
+                        </p>
+                        <p>
+                            H<sub>2</sub>O is the chemical formula for water.<br />
+                            e=mc<sup>2</sup> is the formula for mass-energy equivalence.
+                        </p>
+                        <p>
+                            Your follow-up appointment will be a week from <time datetime="2016-06-28">Tuesday</time>.
+                        </p>
+                        <p>
+                            We hold these truths to be 
+                            <del cite="https://www.loc.gov/exhibits/declara/ruffdrft.html" datetime="1776-06-28">sacred 
+                            & undeniable;</del><ins>self-evident,</ins> that all men are created equal<del> &
+                            independant</del>, that <del>from that equal creation they derive rights inherent &
+                            inalienable</del><ins>they are endowed by their Creator with certain unalienable
+                            Rights</ins>, <del>among which are the preservation of life, & liberty, & the pursuit
+                            of happiness;</del><ins>that among these are Life, Liberty and the pursuit of
+                            Happiness.</ins>
+                        </p>
+                        <p>
+                            As Abraham Lincoln once said, <q>Whatever you are, be a good one</q>.
+                        </p>
+                        <blockquote>
+                            <h1>Gettysburg Address</h1>
+                            <p>
+                                Four score and seven years ago our fathers brought forth, upon this continent, a new
+                                nation, conceived in Liberty, and dedicated to the proposition that all men are 
+                                created equal.
+                            </p>
+                            <p>
+                                Now we are engaged in a great civil war, testing whether that nation, or any nation so 
+                                conceived, and so dedicated, can long endure. We are met here on a great battlefield 
+                                of that war. We have come to dedicate a portion of it, as a final resting place for 
+                                those who here gave their lives that that nation might live. It is altogether fitting 
+                                and proper that we should do this.
+                            </p>
+                            <footer>
+                                <small>Abraham Lincoln, 1864</small>
+                            </footer>
+                            <cite>
+                                <a href="http://www.abrahamlincolnonline.org/lincoln/speeches/gettysburg.htm">
+                                    Gettysburg Address
+                                </a>
+                            </cite>
+                        </blockquote>
+                        <p>
+                            The primary colors are <span class="red">red</span>, <span class="blue">blue</span>, 
+                            and <span class="yellow">yellow</span>.
+                        </p>
+                        <p>
+                            In Hebrew, this אַשְׁרֵי means happy.<br />
+                            <span dir="ltr">!123</span> <span dir="rtl">אַשְׁרֵי</span> <span dir="ltr">456!</span><br />
+                            !123 <bdi>אַשְׁרֵי</bdi> 456!<br />
+                            The user entered <mark><bdi>user input</bdi></mark> on this form.<br />
+                            <bdo>אַשְׁרֵי</bdo><br />
+                            <span dir="rtl">Supercalifragilisticexpialidocious</span>
+                        </p>
+                        <p>
+                            <ruby>$<rp>(</rp><rt>Dollar</rt><rt>USD</rt><rp>)</rp></ruby><br />
+                            <ruby>€<rt>Euro</rt><rt>EUR</rt></ruby><br />
+                            <ruby>£<rt>Pound Sterling<rt>GBP</ruby><br />
+                            <ruby>¥<rt>Japanese Yen</rt><rt>YEN</rt></ruby><br />
+                        </p>
+                    </article>
+                    <article>
+                        <table>
+                            <tr>
+                                <td>One</td>
+                                <td>Two</td>
+                                <td>Three</td>
+                            </tr>
+                            <tr>
+                                <td>Four</td>
+                                <td>Five</td>
+                                <td>Six</td>
+                            </tr>
+                            <tr>
+                                <td>Seven</td>
+                                <td>Eight</td>
+                                <td>Nine</td>
+                            </tr>
+                        </table>
+                        <table>
+                            <caption>Squares and Cubes</caption>
+                            <!--<colgroup span="1"></colgroup>
+                            <colgroup span="1"></colgroup>
+                            <colgroup span="2" style="background-color: #b6ff00"></colgroup>-->
+                            <colgroup>
+                                <col style="background-color: #f00" />
+                                <col />
+                            </colgroup>
+                            <colgroup style="background-color: #b6ff00">
+                                <col span="2" />
+                            </colgroup>
+                            <tr>
+                                <td></td>
+                                <th scope="col">Number</th>
+                                <th scope="col">Squared</th>
+                                <th scope="col">Cubed</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Two</th>
+                                <td>2</td>
+                                <td>4</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Three</th>
+                                <td>3</td>
+                                <td>9</td>
+                                <td>27</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Four</th>
+                                <td>4</td>
+                                <td>16</td>
+                                <td>64</td>
+                            </tr>
+                        </table>
+                        <table>
+                            <caption>Scoreboard</caption>
+                            <thead>
+                                <tr>
+                                    <th>Inning</th>
+                                    <th>Runs</th>
+                                    <th>Hits</th>
+                                    <th>Errors</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>1</td><td>0</td><td>1</td><td>0</td></tr>
+                                <tr><td>2</td><td>2</td><td>5</td><td>0</td></tr>
+                                <tr><td>3</td><td>0</td><td>1</td><td>1</td></tr>
+                                <tr><td>4</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><td>5</td><td>1</td><td>2</td><td>0</td></tr>
+                                <tr><td>6</td><td>0</td><td>1</td><td>0</td></tr>
+                                <tr><td>7</td><td>0</td><td>0</td><td>0</td></tr>
+                                <tr><td>8</td><td>1</td><td>3</td><td>1</td></tr>
+                                <tr><td>9</td><td>1</td><td>2</td><td>0</td></tr>
+                            </tbody>
+                            <tfoot>
+                                <tr><td>Final</td><td>5</td><td>15</td><td>2</td></tr>
+                            </tfoot>
+                        </table>
+                        <table id="Periodic">
+                            <caption>Periodic Table of the Elements</caption>
+                            <tr>
+                                <th>I</th>
+                                <th>II</th>
+                                <th colspan="10" rowspan="4"></th>
+                                <th>III</th>
+                                <th>IV</th>
+                                <th>V</th>
+                                <th>VI</th>
+                                <th>VII</th>
+                                <th>VII</th>
+                            </tr>
+                            <tr>
+                                <th>1</th>
+                                <th>2</th>
+                                <!-- Skipping 10 cells-->
+                                <th>13</th>
+                                <th>14</th>
+                                <th>15</th>
+                                <th>16</th>
+                                <th>17</th>
+                                <th>18</th>
+                            </tr>
+                            <tr>
+                                <td>H</td>
+                                <th></th> <!-- empty cell -->
+                                <!-- Skipping 10 cells-->
+                                <th colspan="5"></th>
+                                <td>He</td>
+                            </tr>
+                            <tr>
+                                <td>Li</td>
+                                <td>Be</td>
+                                <!-- Skipping 10 cells-->
+                                <td>B</td>
+                                <td>C</td>
+                                <td>N</td>
+                                <td>O</td>
+                                <td>F</td>
+                                <td>Ne</td>
+                            </tr>
+                            <tr>
+                                <td>Na</td>
+                                <td>Mg</td>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                                <th>8</th>
+                                <th>9</th>
+                                <th>10</th>
+                                <th>11</th>
+                                <th>12</th>
+                                <td>Al</td>
+                                <td>Si</td>
+                                <td>P</td>
+                                <td>S</td>
+                                <td>Cl</td>
+                                <td>Ar</td>
+                            </tr>
+                            <tr>
+                                <td>K</td>
+                                <td>Ca</td>
+                                <td>Sc</td>
+                                <td>Ti</td>
+                                <td>V</td>
+                                <td>Cr</td>
+                                <td>Mn</td>
+                                <td>Fe</td>
+                                <td>Co</td>
+                                <td>Ni</td>
+                                <td>Cu</td>
+                                <td>Zn</td>
+                                <td>Ga</td>
+                                <td>Ge</td>
+                                <td>As</td>
+                                <td>Se</td>
+                                <td>Br</td>
+                                <td>Kr</td>
+                            </tr>
+                            <tr>
+                                <td>Rb</td>
+                                <td>Sr</td>
+                                <td>Y</td>
+                                <td>Zr</td>
+                                <td>Nb</td>
+                                <td>Mo</td>
+                                <td>Tc</td>
+                                <td>Ru</td>
+                                <td>Rh</td>
+                                <td>Pd</td>
+                                <td>Ag</td>
+                                <td>Cd</td>
+                                <td>In</td>
+                                <td>Sn</td>
+                                <td>Sb</td>
+                                <td>Te</td>
+                                <td>I</td>
+                                <td>Xe</td>
+                            </tr>
+                            <tr>
+                                <td>Cs</td>
+                                <td>Ba</td>
+                                <td></td>
+                                <td>Hf</td>
+                                <td>Ta</td>
+                                <td>W</td>
+                                <td>Re</td>
+                                <td>Os</td>
+                                <td>Ir</td>
+                                <td>Pt</td>
+                                <td>Au</td>
+                                <td>Hg</td>
+                                <td>Tl</td>
+                                <td>Pb</td>
+                                <td>Bi</td>
+                                <td>Po</td>
+                                <td>At</td>
+                                <td>Rn</td>
+                            </tr>
+                            <tr>
+                                <td>Fr</td>
+                                <td>Ra</td>
+                                <td></td>
+                                <td>Rf</td>
+                                <td>Db</td>
+                                <td>Sg</td>
+                                <td>Bh</td>
+                                <td>Hs</td>
+                                <td>Mt</td>
+                                <td>Ds</td>
+                                <td>Rg</td>
+                                <td>Cn</td>
+                                <td>Uut</td>
+                                <td>Fl</td>
+                                <td>Uup</td>
+                                <td>Lv</td>
+                                <td>Uus</td>
+                                <td>Uuo</td>
+                            </tr>
+                        </table>
+                    </article>
+                    <article>
+                        <img src="Media/HTML5.jpg" alt="The HTML5 Badge logo" 
+                             srcset="Media/HTML5_2.jpg 2x, Media/HTML5_3.jpg 3x"/>
+                        <!--<img src="Media/HTML5.jpg" alt="The HTML5 Badge logo" 
+                             srcset="Media/HTML5.jpg 300w, Media/HTML5_2.jpg 150w"
+                             sizes="(max-width: 200px) 25vw, (max-width: 400px) 50vw, (max-width: 600px) 75vw, 100vw"/>-->
+                        <a href="https://html.spec.whatwg.org/multipage/embedded-content.html">
+                            <img src="Media/HTML5.jpg" alt="The HTML5 Badge logo" />                            
+                        </a>
+                        <figure>
+                            <img src="Media/G_Wash_Wide.jpg" alt="The Prayer at Valley Forge"
+                                 srcset="Media/G_Wash_Narrow.jpg 422w, Media/G_Wash_Wide.jpg 885w" 
+                                 width="100%"/>
+                            <footer><small>Copyright © Friberg Fine Art</small></footer>
+                            <figcaption>Arnold Friberg's The Prayer at Valley Forge</figcaption>
+                        </figure>
+                        <img src="Media/Shapes.png" alt="Shapes" width="150" height="50" usemap="#shapeMap" />
+                        <map name="shapeMap">
+                            <area shape="rect" coords="0,0,50,50" alt="square" title="Square" href="https://en.wikipedia.org/wiki/Square" />
+                            <area shape="circle" coords="75,25,25" alt="circle" title="Circle" href="https://en.wikipedia.org/wiki/Circle" />
+                            <area shape="poly" coords="101,50,126,0,150,50" alt="triangle" title="Triangle" href="https://en.wikipedia.org/wiki/Triangle" />
+                        </map>
+                        <br /><br />
+                        <audio src="Media/Linus and Lucy.mp3" controls >
+                            <p>HTML5 audio is not supported on your browser</p>
+                        </audio>
+                        <video src="Media/BigBuckBunny.mp4" controls 
+                               poster="Media/BBB_Poster.png" width="852" height="480">
+                            <track kind="subtitles" src="bbb.vtt" srclang="en" label="English" />
+                            <p> HTML5 video is not supported on your browser</p>
+                        </video>
+                        <object data="MainPage.pdf#zoom=50" type="application/pdf" width="850" height="200">
+                            <a href="MainPage.pdf">Main Page</a>
+                        </object>
+                        <embed src="MainPage.pdf" type="application/pdf" width="850" height="150" />
+                    </article>
+                </section>
+            </section>
+            <aside>
+                <h1>Related content</h1>
+                <section>
+                    <h1>HTML Reference</h1>
+                    <h2>Book Topics</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <h2>HTML Chapters</h2>
+                    <ol start="3" type="I" reversed>
+                        <li>Structural Elements</li>
+                        <li>Text Elements</li>
+                        <li>Table Elements</li>
+                        <li>Embedded Elements</li>
+                        <li>Form Elements</li>
+                    </ol>
+                </section>
+                <section>
+                    <h1>Book list</h1>
+                    <dl>
+                        <dt>Beginning WF</dt>
+                        <dd>Indexed by feature so you can find answers easily and written in an accessible style, Beginning WF shows how Microsoft's Workflow Foundation (WF) technology can be used in a wide variety of applications.</dd>
+                        <dt>Office 2010 Workflow</dt>
+                        <dd>Workflow is the glue that binds information worker processes, users, and artifacts—without it, information workers are just islands of data and potential. Office 2010 Workflow walks you through implementing workflow solutions.</dd>
+                        <dt>Pro Access 2010 Development</dt>
+                        <dd>Pro Access 2010 Development is a fundamental resource for developing business applications that take advantage of the features of Access 2010. You'll learn how to build database applications, create Web-based databases, develop macros and VBA tools for Access applications, integrate Access with SharePoint, and much more.</dd>
+                    </dl>
+                    <article>
+                        <h1>Book 1</h1>
+                    </article>
+                </section>
+            </aside>
+        </section>
+        <footer>
+            <p>Closing content</p>
+            <address>
+                <p>Provided by 
+                    <a href="mailto:mcollins@theCreativePeople.com">Mark J. Collins</a>
+                </p>
+                <p>For more information 
+                    <a href="www.theCreativePeople.com">visit his website</a>
+                </p>
+            </address>
+        </footer>
+    </body>
+</html>

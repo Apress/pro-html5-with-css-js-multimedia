@@ -1,0 +1,67 @@
+/* include the border in the sizing values */
+* {
+    box-sizing: border-box;
+}
+.std1 {
+    height: 30px;
+    width: 350px;
+    border: 1px solid black;
+    background-color: lightblue;
+}
+.std2 {
+    height: 30px;
+    width: 50px;
+    border: none;
+    background-color: lightblue;
+}
+section {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: stretch;
+}
+
+/* Put a border around the children*/
+section>* {
+    border:  1px solid black;
+    margin:  0;
+}
+
+.i1 {
+    /*flex: 1 3 350px;
+    flex: 1 .35 350px;*/
+    flex: 3;
+    align-self: flex-end;
+}
+/* Not needed, this is the default for images */
+.i2 {
+    flex: none;
+}
+.i3 {
+    height: 75px;
+    background-color: lightyellow;
+    /*flex: 2 0 50px;*/
+    flex: 1;
+    align-self: center;
+}
+.i4 {
+    /*flex: 3 1 auto;*/
+    flex: 2;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
+header, footer {
+    text-align: center;
+    background-color: lightgreen;
+    flex: 0 0 35px;
+}
+main {
+    flex: auto;
+}
+footer {
+    order: 3;
+}

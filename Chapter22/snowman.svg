@@ -1,0 +1,45 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns:svg="http://www.w3.org/2000/svg" version="1.1"
+        width="100px" height="230px"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+    <circle class="body" cx="50" cy="171" r="40" />
+    <circle class="body" cx="50" cy="103" r="30" />
+    <circle class="body" cx="50" cy="50" r="25" />
+    <line class="hat" x1="30" y1="25" x2="70" y2="25" />
+    <rect class="hat" x="40" y="10" width="20" height="15" />
+    <circle class="button" cx="50" cy="82" r="4" />
+    <circle class="button" cx="50" cy="100" r="4" />
+    <circle class="button" cx="50" cy="118" r="4" />
+    <circle class="eye" cx="42" cy="42" r="4" />
+    <circle class="eye" cx="58" cy="42" r="4" />
+    <polygon class="nose" points="45,60 45,50 60,55" />
+    <style>
+        .body {
+            fill: white;
+            stroke: gray;
+            stroke-width: 1px;
+        }
+        
+        .hat {
+            fill: black;
+            stroke: black;
+            stroke-width: 3px;
+        }
+        
+        .button {
+            fill: black;
+        }
+        
+        .eye {
+            fill: black;
+        }
+        
+        .nose {
+            fill: orange;
+        }
+    </style>
+</svg>

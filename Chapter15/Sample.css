@@ -1,0 +1,121 @@
+.circle {
+    width: 300px;
+    height: 300px;
+    margin: 10px 0 0 0;
+    border-radius:  50%;
+    background-color: red;
+}
+
+.bounce {
+    width: 100px;
+    height: 35px;
+    margin-left: 300px;
+    border-radius: 10px;
+    background-color: lightblue;
+}
+
+@keyframes colors {
+    0%, 100% {
+        background-color: red;
+    }
+    33% {
+        background-color: yellow;    
+    }
+    66% {
+        background-color: blue;    
+    }
+}
+
+@keyframes colors2 {
+    0% {
+        background-color: #FA0;
+        width: 300px;
+        height: 300px;
+        margin: 10px 0 0 0;
+    }
+    100% {
+        background-color: #950;    
+        width: 100px;
+        height: 100px;
+        margin: 110px 0 0 100px;
+    }
+}
+
+.circle {
+    animation: colors 5s;
+    /*animation-name: colors;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-delay: 1s;
+    animation-iteration-count: 4;
+    animation-timing-function: linear;*/
+}
+
+@keyframes bounce {
+    from {
+    margin-left: 0;
+    }
+    to {
+       margin-left: 300px;
+    }
+}
+
+.bounce {
+    animation: 3s cubic-bezier(0.80, 0.25, 0.75, 1.30) bounce;
+}
+
+.tran {
+    width:  200px;
+    height: 100px;
+    background-color:  lightyellow;
+    border:  1px solid black;
+    /*transition-property: width;*/
+    /*transition-property: width, height;
+    transition-duration: 1s;
+    transition-delay: 0s;
+    transition-timing-function: cubic-bezier(0.80, 0.25, 0.75, 1.30);*/
+    transition: width 3s 0s cubic-bezier(0.80, 0.25, 0.75, 1.30), height 1s;
+}
+.tran:hover {
+    width: 420px;
+    height: 150px;
+    /*transition-duration: 3s, 1s;*/
+}
+
+.transform {
+    margin: 25px;
+    height: 50px;
+    width: 100px;
+    border: 1px solid black;
+    background-color: lightblue;
+}
+.translate {
+    transform: translate(30px, -10px);
+}
+.rotate {
+    /*transform: rotateZ(15deg);*/
+    transform: rotate(15deg);
+    transform-origin: bottom left;
+}
+.scale {
+    transform: scale(1.5, .9);
+    transform-origin: bottom left;
+}
+.skew {
+    transform: skew(20deg, 15deg);
+    transform-origin: top left;
+}
+
+.rotate3D {
+    margin: 100px;
+    transform-style: preserve-3d;    
+    perspective: 360px;
+    perspective-origin: left;
+}
+img {
+    backface-visibility: hidden;
+    transition: all 5s linear;
+}
+img:hover {
+    transform: rotateY(360deg);
+}

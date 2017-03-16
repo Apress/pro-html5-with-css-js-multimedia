@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Chapter 13 - Table</title>
+        <link rel="stylesheet" href="Sample.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Chapter 13 - Styling Tables</h1>
+        </header>
+        <section>
+            <nav role="navigation">
+                <ul>
+                    <li>One</li>
+                    <li>Two</li>
+                    <li>Three</li>
+                    <li>Four</li>
+                </ul>
+            </nav>
+            <main>
+                <table>
+                    <caption>Chess Pieces</caption>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Qty</th>
+                            <th>Points</th>
+                            <th>Symbol</th>
+                            <th>Movement</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>King</th><td>1</td><td>n/a</td>
+                            <td><img src="king.png" alt="King" /></td>
+                            <td>1 space in any direction</td>
+                        </tr>
+                        <tr>
+                            <th>Queen</th><td>1</td><td>10</td>
+                            <td><img src="queen.png" alt="Queen" /></td>
+                            <td>any number of spaces in any direction</td>
+                        </tr>
+                        <tr>
+                            <th>Rook</th><td>2</td><td>5</td>
+                            <td><img src="rook.png" alt="Rook" /></td>
+                            <td>any number if spaces forward, backwards, or sideways</td>
+                        </tr>
+                        <tr>
+                            <th>Bishop</th><td>2</td><td>3</td>
+                            <td><img src="bishop.png" alt="Bishop" /></td>
+                            <td>any number of spaces diagonally</td>
+                        </tr>
+                        <tr>
+                            <th>Knight</th><td>2</td><td>3</td>
+                            <td><img src="knight.png" alt="Knight" /></td>
+                            <td>2 spaces up or down and 1 space sideways OR 1 space up or down and 2 spaces 
+                                sideways; can jump pieces</td>
+                        </tr>
+                        <tr>
+                            <th>Pawn</th><td>8</td><td>1</td>
+                            <td><img src="pawn.png" alt="Pawn" /></td>
+                            <td>generally 1 space forward; first move can be 2 spaces forward; 
+                                captures 1 space forward diagonally</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Totals</th><td>16</td><td>40</td><td></td><td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <!--<article>
+                    <div class="table">
+                        <div class="head row">
+                            <h3>Name</h3>
+                            <h3>Qty</h3>
+                            <h3>Points</h3>
+                            <h3>Symbol</h3>
+                            <h3>Movement</h3>
+                        </div>
+                        <div class="body row">
+                            <h3>King</h3><p>1</p><p>n/a</p>
+                            <p><img src="king.png" alt="King" /></p>
+                            <p>1 space in any direction</p>
+                        </div>
+                        <div class="body row">
+                            <h3>Queen</h3><p>1</p><p>10</p>
+                            <p><img src="queen.png" alt="Queen" />
+                            <p>any number of spaces in any direction</p>
+                        </div>
+                        <div class="body row">
+                            <h3>Rook</h3><p>2</p><p>5</p>
+                            <p><img src="rook.png" alt="Rook" /></p>
+                            <p>any number if spaces forward, backwards, or sideways</p>
+                        </div>
+                        <div class="body row">
+                            <h3>Bishop</h3><p>2</p><p>3</p>
+                            <p><img src="bishop.png" alt="Bishop" /></p>
+                            <p>any number of spaces diagonally</p>
+                        </div>
+                        <div class="body row">
+                            <h3>Knight</h3><p>2</p><p>3</p>
+                            <p><img src="knight.png" alt="Knight" /></p>
+                            <p>2 spaces up or down and 1 space sideways OR 1 space up or down and 2 spaces 
+                                sideways; can jump pieces</p>
+                        </div>
+                        <div class="body row">
+                            <h3>Pawn</h3><p>8</p><p>1</p>
+                            <p><img src="pawn.png" alt="Pawn" /></p>
+                            <p>generally 1 space forward; first move can be 2 spaces forward; 
+                                captures 1 space forward diagonally</p>
+                        </div>
+                        <div class="foot row">
+                            <h3>Totals</h3><p>16</p><p>40</p><p></p><p></p>
+                        </div>
+                    </div>
+                </article>-->
+                <div class="centering">
+                    <div><img src="penny.jpg" alt="penny" /></div>
+                    <p>Fourscore and seven years ago, our fathers brought forth to this continent a new nation...</p>
+                </div>
+            </main>
+            <aside>
+                <h1>Check out these titles</h1>
+                <ul>
+                    <li>Beginning Workflow 4.0</li>
+                    <li>Office Workflow 2010</li>
+                    <li>Project Management with SharePoint 2010</li>
+                    <li>Pro Access 2010</li>
+                    <li>Office 365 Development</li>
+                    <li>HTML5 with Visual Studio 2015</li>
+                </ul>
+            </aside>
+        </section>
+        <footer>
+            Professional HTML5 - Apress
+        </footer>
+    </body>
+</html>

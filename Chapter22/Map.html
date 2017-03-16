@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Chapter 22 - US Map</title>
+        <link rel="stylesheet" href="Map.css" />
+        <script src="States.js" defer></script>
+        <script src="Map.js" defer></script>
+    </head>
+    <body>
+        <svg xmlns:svg="http://www.w3.org/2000/svg" version="1.1"
+             width="959px" height="593px"
+             xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink"
+             id="map">
+            <defs> 
+                <linearGradient id="blueGradient"
+                                x1="0%" y1="0%"
+                                x2="100%" y2="100%"
+                                spreadMethod="pad">
+                  <stop offset="0%"   stop-color="#ffffff" stop-opacity="1"/>
+                  <stop offset="50%" stop-color="#6699cc" stop-opacity="1"/>
+                  <stop offset="100%" stop-color="#4466aa" stop-opacity="1"/>
+                </linearGradient>
+                <pattern id="TXflag" patternUnits="objectBoundingBox" width="1" height="1"> 
+                    <image xlink:href="TX_Flag.jpg" x="0" y="0" 
+                           width="377" height="226" /> 
+                </pattern>
+            </defs>
+        </svg>
+    </body>
+</html>

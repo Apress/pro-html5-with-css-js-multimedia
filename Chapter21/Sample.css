@@ -1,0 +1,11 @@
+input[type="button"] {
+    width: 75px;
+    background-color: lightblue;
+    border-radius: 5px;
+}
+#audioSeek, #videoSeek {
+    width: 300px;
+}
+#volume, #volumeVideo {
+    width: 50px;
+}
